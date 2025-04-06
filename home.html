@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>আমার ব্লগ</title></head>
+<body>
+    <h1>আমার ব্লগ</h1>
+    <a href="/new">নতুন পোস্ট যোগ করো</a>
+    {% for post in posts %}
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
